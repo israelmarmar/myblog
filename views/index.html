@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Node Blog</h1>
+        
+        <% for(post of posts){ %>
+            <article>
+                <p><%= post.body %></p>
+            </article>
+        <% } %>
+        <form action="addpost" method="post">
+            <textarea name="body"></textarea>
+            <input type="submit" value="Add Post" />
+        </form>
+    </body>
+</html>
