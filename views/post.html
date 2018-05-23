@@ -1,14 +1,12 @@
 <html>
     <head></head>
     <body>
-        <h1>Node Blog</h1>
-        
-        <% for(post of posts){ %>
-            <div>
+            <article>
                 <h1><%= post.title %></h1>
                 <p><%= post.subtitle%></p>
-            </div>
-        <% } %>
+                <%- md(post.body) %>
+            </article>
+
         
     </body>
 </html>
