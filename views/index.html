@@ -1,14 +1,37 @@
 <html>
-    <head></head>
+    <head>
+
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<title>Israel Martins</title>
+
+    	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet prefetch" href="/views/styles.css">
+    	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+    </head>
+
     <body>
-        <h1>Node Blog</h1>
+    	<div class="container">
+        <h1>Israel Martins</h1>
         
         <% for(post of posts){ %>
             <div>
-                <h1><%= post.title %></h1>
+                <h2>
+
+                <a href=<%= post.idtitle %>>
+                <%= post.title %>
+                </a>
+
+                </h2>
+
+                <h4>
+            	<%= post.date%>	
+            	</h4>
+            	
                 <p><%= post.subtitle%></p>
             </div>
         <% } %>
-        
+        <div>
     </body>
 </html>

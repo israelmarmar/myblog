@@ -19,6 +19,7 @@
   "homepage": "https://github.com/israelmarmar/myblog#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dateformat": "^3.0.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "marked": "^0.4.0",
